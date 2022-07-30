@@ -1,25 +1,45 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            clifford: '#da373d',
-          }
-        }
-      }
-    }
-  </script>
+  <head>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              merah: "#da373d",
+              coklat: "#75634D",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
 
-</head>
-<body>
-  <h1 class="text-3xl font-bold underline text-clifford">
-    Hello world!
-  </h1>
-</body>
+  <body>
+    <section
+      class="bg-[url('../asset/home-bg.jpg')] bg-no-repeat bg-contain min-h-screen"
+    >
+      <nav class="py-5 px-10 flex justify-between items-center">
+        <div>
+          <img class="h-14" src="../asset/logo.png" alt="" />
+        </div>
+
+        <ul class="flex font-medium text-coklat gap-x-12">
+          <li class="cursor-pointer">Home</li>
+          <li class="cursor-pointer"><a href="./About.html">About</a></li>
+          <li class="cursor-pointer">Features</li>
+          <li class="cursor-pointer">Contact</li>
+        </ul>
+
+        <span class="text-3xl text-coklat material-icons"> search </span>
+      </nav>
+    </section>
+  </body>
 </html>
